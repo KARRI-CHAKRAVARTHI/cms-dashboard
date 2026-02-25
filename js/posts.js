@@ -39,6 +39,7 @@ function renderPosts() {
 
     li.innerHTML = `
       <strong>${post.title}</strong> (${post.status})
+      <p>${post.content}</p>
       <br>By: ${post.author}
       <button onclick="deletePost(${post.id})">Delete</button>
     `;
@@ -61,3 +62,4 @@ function deletePost(id) {
   renderPosts();
   updateStats();
 }
+
